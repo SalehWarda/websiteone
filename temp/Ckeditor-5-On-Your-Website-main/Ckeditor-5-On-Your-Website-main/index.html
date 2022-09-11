@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ckeditor5</title>
+  <style>
+    .container {
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="editor">
+      This is the inline text
+    </div>
+  </div>
+
+<a href="home.html" target="_blank">Home</a>
+
+  <script src="ckeditor/ckeditor.js"></script>
+
+  <script>
+    ClassicEditor
+      .create(document.querySelector('#editor'))
+      .catch(error => {
+        console.error(error)
+      });
+  </script>
+</body>
+
+</html>
